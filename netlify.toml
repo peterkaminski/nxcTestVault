@@ -2,7 +2,7 @@
   ignore = "/bin/false"
   base = ".massivewikibuilder"
   publish = "./output"
-  command = "nxc -c ./nxc.yaml -w .. -o ./output -t ./this-wiki-themes/dolce --lunr --commits"
+  command = "nxc build -i .. -o ./output --commits"
 
 [build.environment]
   PYTHON_VERSION = "3.8"
