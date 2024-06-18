@@ -16,6 +16,7 @@
 	- DONE - set up Github repository  
 	- DONE - modify `netlify.toml` to use test-pypi module `nxc`  
 - yet TODO:  
+	- bug: links returned by search do not have a correct path  
 	- further local testing on my own `cleanbench`  
 	- code review  
 	- document  use cases and how-to use  
