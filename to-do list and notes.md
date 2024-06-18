@@ -14,6 +14,13 @@
 - today's plan list :  
 	- DONE - set up test vault  
 	- DONE - set up Github repository  
-	- WIP - modify `netlify.toml` to use test-pypi module `nxc`  
+	- DONE - modify `netlify.toml` to use test-pypi module `nxc`  
+- yet TODO:  
+	- further local testing on my own `cleanbench`  
+	- code review  
+	- document  use cases and how-to use  
+	- determine a name for this package and write description for PyPI  
+	- public announcements?  
+
 
  
