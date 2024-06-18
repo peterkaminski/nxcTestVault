@@ -12,8 +12,8 @@
 	 - there are questions to be resolved about how to help the user of the system set up, or modify already set up, configurations.  
    
 - today's plan list :  
-	- set up test vault  
-	- set up Github repository  
-	- modify `netlify.toml` to use test-pypi module `nxc`  
+	- DONE - set up test vault  
+	- DONE - set up Github repository  
+	- WIP - modify `netlify.toml` to use test-pypi module `nxc`  
 
  
