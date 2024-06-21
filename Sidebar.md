@@ -4,6 +4,7 @@
 
 [Search](/search.html)  
 [All Pages](/all-pages.html)  
+[Recent Pages](/recent-pages.html)  
 
 ## A wiki page of note
 
