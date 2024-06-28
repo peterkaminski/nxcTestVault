@@ -22,19 +22,19 @@ jobs:
 
     - name: install Python dependencies
       run: |
-        cd .massivewikibuilder/massivewikibuilder
+        cd .massivewikibuilder
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: install node modules
-      working-directory: .massivewikibuilder/massivewikibuilder
+      working-directory: .massivewikibuilder
       run: |
         npm ci
 
     - name: Build website
       run: |
-        cd .massivewikibuilder/massivewikibuilder
-        ./mwb.py -c ../mwb.yaml -w ../.. -o ../../output -t ../this-wiki-themes/dolce -r /ghPagesLab --lunr --commits
+        cd .massivewikibuilder
+        nxc -i .. -o ../output -r /nxcTestVault --lunr --commits
 
     - name: add a nojekyll file
       run: touch $GITHUB_WORKSPACE/output/.nojekyll
