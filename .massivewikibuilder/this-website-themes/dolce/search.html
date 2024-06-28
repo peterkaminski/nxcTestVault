@@ -33,7 +33,8 @@
     </div>
   </div>
   <script>{% include '_javascript.html' %}</script>
-    <script>
+  <script>
+      const websiteroot = "{{websiteroot}}";
       function doSearch() {
 	let searchString=document.getElementById("inputID").value;
 	var ul = document.createElement('ul');
@@ -56,7 +57,7 @@
 	  var anchor = document.createElement('a');
 	  anchor.append(document.createTextNode(`${element.title}`));
 	  anchor.setAttribute('class', 'wikilink');
-	  anchor.setAttribute('href',`${element.link}`);
+	  anchor.setAttribute('href',`${websiteroot}${element.link}`);
 	  anchor.setAttribute('target', '_blank');
 	  var li = document.createElement('li');
 	  li.setAttribute('class','item');
@@ -86,6 +87,6 @@
       })
     </script>
   {% include '_footer.html' %}
-  <script src="/mwb-static/js/script.js"></script>
+  <script src="{{websiteroot}}/mwb-static/js/script.js"></script>
 </body>
 </html>
