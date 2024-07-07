@@ -76,3 +76,7 @@ when `exclude_subdirs` is a list of directories this code is an option:
 ```python
 filtered_markdown_files = [file for file in markdown_files if not any(file.startswith(exclude_subdir) for exclude_subdir in exclude_subdirs)]
 ```
+
+2024-07-07:
+ - "Edit the page" code in the test-pypi package ToBeTested  
+ - TODO: review and organize the `nxc` templates directory  
