@@ -6,9 +6,9 @@ html {
 body {
   font-size: 1.5em;
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #636363;
+  color: #333;
   background: #FEFEFE;
 }
 
@@ -40,6 +40,17 @@ img, video, iframe {
   padding: 20px;
   margin-right: 10px;
   overflow-y: auto;
+  position: relative; /* context for pseudo-element */
+}
+/* pseudo-element to be a vertical bar */
+#side-column::after {
+  content: '';
+  position: absolute;
+  top: 20px; /* Start 20px from the top */
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: black;
 }
 
 #main-column {
