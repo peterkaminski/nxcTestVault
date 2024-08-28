@@ -41,17 +41,7 @@ img, video, iframe {
   padding: 20px;
   margin-right: 10px;
   overflow-y: auto;
-  position: relative; /* context for pseudo-element */
-}
-/* pseudo-element to be a vertical bar */
-#side-column::after {
-  content: '';
-  position: absolute;
-  top: 20px; /* Start 20px from the top */
-  right: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: black;
+  border-right: 1px solid #454545;
 }
 
 #main-column {
